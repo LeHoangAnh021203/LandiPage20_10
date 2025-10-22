@@ -63,7 +63,7 @@ export function Technology() {
           <div className="relative group">
             <div className="relative h-auto rounded-2xl overflow-hidden shadow-2xl transition-all duration-500 group-hover:shadow-3xl">
               <Image
-                src="/3. Công nghệ Meso.png"
+                src="/Công nghệ Meso.png"
                 alt="Công nghệ Meso không xâm lấn"
                 width={500}
                 height={500}

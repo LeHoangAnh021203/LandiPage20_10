@@ -7,7 +7,7 @@ export function Footer() {
       {/* Background Image */}
       <div className="absolute inset-0">
         <Image
-          src="/8. Background.png"
+          src="/Background.png"
           alt="Background"
           width={2000}
           height={500}

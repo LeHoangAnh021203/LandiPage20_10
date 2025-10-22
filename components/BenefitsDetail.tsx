@@ -42,7 +42,7 @@ export function BenefitsDetail() {
           <div className="relative group">
             <div className="relative h-auto rounded-2xl overflow-hidden shadow-2xl transition-all duration-500 group-hover:shadow-3xl">
               <Image
-                src="/5. 4 hình.png"
+                src="/4 hình.png"
                 alt="4 lợi ích chính của công nghệ Meso"
                 width={650}
                 height={500}

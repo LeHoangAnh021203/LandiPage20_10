@@ -170,7 +170,7 @@ export function Booking() {
             <div className="relative">
               <div className="relative h-auto w-auto rounded-2xl overflow-hidden shadow-2xl">
                 <Image
-                  src="/4. Đăng ký nhận quà.png"
+                  src="/Đăng ký nhận quà.png"
                   alt="Đăng ký nhận quà"
                   width={200}
                   height={100}
