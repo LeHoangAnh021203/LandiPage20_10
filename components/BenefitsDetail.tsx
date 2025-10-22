@@ -26,7 +26,7 @@ const benefits = [
 
 export function BenefitsDetail() {
   return (
-    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-pink-50 to-purple-50">
+    <section className="py-20 px-4 sm:px-6 lg:px-8 ">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
@@ -80,7 +80,7 @@ export function BenefitsDetail() {
             ))}
 
             {/* CTA */}
-            <div className="mt-8 p-6 bg-white rounded-xl shadow-lg">
+      <div className="mt-8 p-6 rounded-xl shadow-lg bg-white/80">
               <h4 className="text-lg font-bold text-gray-900 mb-2">
                 Bạn muốn trải nghiệm tất cả lợi ích này?
               </h4>

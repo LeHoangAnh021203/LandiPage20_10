@@ -55,33 +55,42 @@ export function Booking() {
     }
   };
   return (
-    <section id="booking" className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+    <section
+      id="booking"
+      className="pt-0 pb-12 sm:pb-16 lg:py-20 px-4 sm:px-6 lg:px-8"
+      style={{
+        backgroundImage: "url('/Background1.png')",
+        backgroundSize: 'cover',
+        backgroundRepeat: 'no-repeat',
+        backgroundPosition: 'center',
+      }}
+    >
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+        <div className="text-center mb-12 sm:mb-16">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-3 sm:mb-4">
             Đặt lịch ngay - Nhận ưu đãi đặc biệt
           </h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+          <p className="text-lg sm:text-xl text-gray-600 max-w-2xl mx-auto">
             Đăng ký ngay để nhận tư vấn miễn phí và ưu đãi hấp dẫn
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           {/* Booking Form */}
-          <div className="bg-gradient-to-br from-pink-50 to-purple-50 rounded-2xl p-8">
-            <div className="text-center mb-8">
-              <div className="w-16 h-16 bg-gradient-to-r from-pink-500 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Calendar className="w-8 h-8 text-white" />
+          <div className="bg-gradient-to-br from-pink-50 to-purple-50 rounded-2xl p-6 sm:p-8">
+            <div className="text-center mb-6 sm:mb-8">
+              <div className="w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-r from-pink-500 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4">
+                <Calendar className="w-6 h-6 sm:w-8 sm:h-8 text-white" />
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-2">
+              <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-2">
                 Đặt lịch tư vấn miễn phí
               </h3>
-              <p className="text-gray-600">
+              <p className="text-sm sm:text-base text-gray-600">
                 Điền thông tin để nhận tư vấn từ chuyên gia
               </p>
             </div>
 
-            <form onSubmit={handleSubmit} className="space-y-6">
+            <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-2">
@@ -143,13 +152,13 @@ export function Booking() {
 
               {/* Status Messages */}
               {submitStatus === "success" && (
-                <div className="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded-lg">
+                <div className="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded-lg text-sm sm:text-base">
                   ✅ Thông tin đã được gửi thành công! Chúng tôi sẽ liên hệ lại với bạn sớm nhất.
                 </div>
               )}
 
               {submitStatus === "error" && (
-                <div className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded-lg">
+                <div className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded-lg text-sm sm:text-base">
                   ❌ {errorMessage}
                 </div>
               )}
@@ -157,7 +166,7 @@ export function Booking() {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full bg-gradient-to-r from-pink-500 to-purple-600 text-white py-4 rounded-lg hover:from-pink-600 hover:to-purple-700 transition-all font-semibold text-lg disabled:opacity-50 disabled:cursor-not-allowed"
+                className="w-full bg-gradient-to-r from-pink-500 to-purple-600 text-white py-3 sm:py-4 rounded-lg hover:from-pink-600 hover:to-purple-700 transition-all font-semibold text-base sm:text-lg disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 {isSubmitting ? "Đang gửi..." : "Đặt lịch ngay - Miễn phí tư vấn"}
               </button>
@@ -168,13 +177,13 @@ export function Booking() {
           <div className="space-y-8">
             {/* Gift Image */}
             <div className="relative">
-              <div className="relative h-auto w-auto rounded-2xl overflow-hidden shadow-2xl">
+              <div className="relative h-auto w-auto rounded-none sm:rounded-2xl overflow-hidden shadow-2xl">
                 <Image
                   src="/Đăng ký nhận quà.png"
                   alt="Đăng ký nhận quà"
                   width={200}
                   height={100}
-                  className="object-contain animate-pulse hover:animate-none transition-transform duration-1000 hover:scale-105"
+                  className="object-cover w-full h-auto animate-pulse hover:animate-none transition-transform duration-1000 hover:scale-105"
                 />
               </div>
 
