@@ -93,7 +93,7 @@ export function Booking() {
                     value={formData.name}
                     onChange={handleInputChange}
                     required
-                    className="w-full px-4 py-3 border bg-[#fce7f4] border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-transparent"
+                    className="w-full px-4 py-3 border bg-[#fce7f4] text-[black] border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-transparent"
                     placeholder="Nhập họ và tên"
                   />
                 </div>
@@ -107,7 +107,7 @@ export function Booking() {
                     value={formData.phone}
                     onChange={handleInputChange}
                     required
-                    className="w-full px-4 py-3 border bg-[#fce7f4] border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-transparent"
+                    className="w-full px-4 py-3 border bg-[#fce7f4] text-[black] border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-transparent"
                     placeholder="Nhập số điện thoại"
                   />
                 </div>
@@ -122,7 +122,7 @@ export function Booking() {
                   name="email"
                   value={formData.email}
                   onChange={handleInputChange}
-                  className="w-full px-4 py-3 bg-[#fce7f4] border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-transparent"
+                  className="w-full px-4 py-3 bg-[#fce7f4] border text-[black] border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-transparent"
                   placeholder="Nhập email"
                 />
               </div>
@@ -136,7 +136,7 @@ export function Booking() {
                   value={formData.notes}
                   onChange={handleInputChange}
                   rows={4}
-                  className="w-full px-4 bg-[#fce7f4] py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-transparent"
+                  className="w-full px-4 bg-[#fce7f4] text-[black] py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-transparent"
                   placeholder="Mô tả tình trạng da hoặc yêu cầu đặc biệt..."
                 />
               </div>
