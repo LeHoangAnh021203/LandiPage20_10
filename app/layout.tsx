@@ -5,8 +5,13 @@ import './globals.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Ladioage - Công nghệ trẻ hóa da Meso',
+  title: 'Face Wash Fox - Meso',
   description: 'Công nghệ Meso không xâm lấn, an toàn và hiệu quả cho việc trẻ hóa làn da. Đặt lịch ngay để nhận ưu đãi đặc biệt!',
+  icons: {
+    icon: '/favicon.ico',
+    shortcut: '/favicon.ico',
+    apple: '/favicon.ico',
+  },
 }
 
 export default function RootLayout({
