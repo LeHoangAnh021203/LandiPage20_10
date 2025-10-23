@@ -13,7 +13,7 @@ export function Header() {
         <div className="flex justify-between items-center py-3 sm:py-4">
           {/* Logo */}
           <div className="flex w-100 items-center space-x-2">
-            <div className=" flex w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-r from-pink-500 to-purple-600 rounded-lg flex items-center justify-center">
+            <div className=" flex w-10 h-10 sm:w-12 sm:h-12 ">
               <Image src="/logo.png" alt="Logo" width={64} height={64} />
             </div>
             <span className="text-lg sm:text-xl font-bold  xs:block bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent">

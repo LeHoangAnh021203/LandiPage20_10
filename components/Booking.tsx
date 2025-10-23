@@ -9,17 +9,21 @@ export function Booking() {
     name: "",
     phone: "",
     email: "",
-    notes: ""
+    notes: "",
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitStatus, setSubmitStatus] = useState<"idle" | "success" | "error">("idle");
+  const [submitStatus, setSubmitStatus] = useState<
+    "idle" | "success" | "error"
+  >("idle");
   const [errorMessage, setErrorMessage] = useState("");
 
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleInputChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     const { name, value } = e.target;
-    setFormData(prev => ({
+    setFormData((prev) => ({
       ...prev,
-      [name]: value
+      [name]: value,
     }));
   };
 
@@ -60,9 +64,9 @@ export function Booking() {
       className="pt-0 pb-12 sm:pb-16 lg:py-20 px-4 sm:px-6 lg:px-8"
       style={{
         backgroundImage: "url('/Background1.png')",
-        backgroundSize: 'cover',
-        backgroundRepeat: 'no-repeat',
-        backgroundPosition: 'center',
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
+        backgroundPosition: "center",
       }}
     >
       <div className="max-w-7xl mx-auto">
@@ -153,7 +157,8 @@ export function Booking() {
               {/* Status Messages */}
               {submitStatus === "success" && (
                 <div className="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded-lg text-sm sm:text-base">
-                  ✅ Thông tin đã được gửi thành công! Chúng tôi sẽ liên hệ lại với bạn sớm nhất.
+                  ✅ Thông tin đã được gửi thành công! Chúng tôi sẽ liên hệ lại
+                  với bạn sớm nhất.
                 </div>
               )}
 
@@ -168,7 +173,9 @@ export function Booking() {
                 disabled={isSubmitting}
                 className="w-full bg-gradient-to-r from-pink-500 to-purple-600 text-white py-3 sm:py-4 rounded-lg hover:from-pink-600 hover:to-purple-700 transition-all font-semibold text-base sm:text-lg disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                {isSubmitting ? "Đang gửi..." : "Đặt lịch ngay - Miễn phí tư vấn"}
+                {isSubmitting
+                  ? "Đang gửi..."
+                  : "Đặt lịch ngay - Miễn phí tư vấn"}
               </button>
             </form>
           </div>
@@ -183,7 +190,7 @@ export function Booking() {
                   alt="Đăng ký nhận quà"
                   width={200}
                   height={100}
-                  className="object-cover w-full h-auto animate-pulse hover:animate-none transition-transform duration-1000 hover:scale-105"
+                  className="object-containt w-[400] h-auto animate-pulse hover:animate-none transition-transform duration-1000 hover:scale-105"
                 />
               </div>
 
@@ -216,8 +223,7 @@ export function Booking() {
                     <p className="font-semibold text-gray-900">Email</p>
                     <p className="text-gray-600">info@facewashfox.com</p>
                   </div>
-                </div>
-                s
+                </div>  
               </div>
             </div>
 
@@ -234,11 +240,11 @@ export function Booking() {
                 </li>
                 <li className="flex items-center space-x-2">
                   <span className="w-2 h-2 bg-white rounded-full"></span>
-                  <span>Giảm 30% cho lần điều trị đầu</span>
+                  <span>Ưu đãi lên đến 35% cho lần đầu trải nghiệm</span>
                 </li>
                 <li className="flex items-center space-x-2">
                   <span className="w-2 h-2 bg-white rounded-full"></span>
-                  <span>Gói chăm sóc da sau điều trị</span>
+                  <span>Đăng ký thẻ thành viên Foxie để nhận nhiều quà tặng, ưu đãi hấp dẫn</span>
                 </li>
               </ul>
             </div>

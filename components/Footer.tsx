@@ -1,4 +1,4 @@
-import { Github, Twitter, Linkedin, Mail } from 'lucide-react'
+import { Github, Phone, Linkedin, Mail, Facebook } from 'lucide-react'
 import Image from 'next/image'
 
 export function Footer() {
@@ -22,7 +22,7 @@ export function Footer() {
           {/* Brand */}
           <div className="col-span-1 sm:col-span-2 lg:col-span-2">
             <div className="flex items-center space-x-2 mb-3 sm:mb-4">
-              <div className="w-10 h-10 sm:w-auto sm:h-auto bg-gradient-to-r from-pink-500 to-purple-600 rounded-lg flex items-center justify-center">
+              <div className="w-10 h-10 sm:w-auto sm:h-auto ">
                 <Image src="/logo.png" alt="logo" width={54} height={54}/>
               </div> 
               <span className="text-lg sm:text-xl font-bold">Công Nghệ Meso</span>
@@ -32,16 +32,16 @@ export function Footer() {
               Đội ngũ chuyên gia giàu kinh nghiệm với trang thiết bị hiện đại.
             </p>
             <div className="flex space-x-3 sm:space-x-4">
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                <Github className="w-4 h-4 sm:w-5 sm:h-5" />
+              <a href="tel:0889866666" className="text-gray-400 hover:text-white transition-colors">
+                <Phone className="w-4 h-4 sm:w-5 sm:h-5" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                <Twitter className="w-4 h-4 sm:w-5 sm:h-5" />
+              <a href="https://www.facebook.com/facewashfox" className="text-gray-400 hover:text-white transition-colors">
+                <Facebook className="w-4 h-4 sm:w-5 sm:h-5" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
+              <a href="https://www.linkedin.com/company/facewashfox/posts/?feedView=all" className="text-gray-400 hover:text-white transition-colors">
                 <Linkedin className="w-4 h-4 sm:w-5 sm:h-5" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
+              <a href="mailto:info@facewashfox.com" className="text-gray-400 hover:text-white transition-colors">
                 <Mail className="w-4 h-4 sm:w-5 sm:h-5" />
               </a>
             </div>
