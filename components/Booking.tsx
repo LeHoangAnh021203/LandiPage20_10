@@ -2,7 +2,7 @@
 
 import { Calendar, Gift, Phone, Mail } from "lucide-react";
 import Image from "next/image";
-import { useState } from "react";
+import { useState, useRef } from "react";
 
 export function Booking() {
   const [formData, setFormData] = useState({
@@ -16,6 +16,7 @@ export function Booking() {
     "idle" | "success" | "error"
   >("idle");
   const [errorMessage, setErrorMessage] = useState("");
+  const nameInputRef = useRef<HTMLInputElement>(null);
 
   const handleInputChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -101,6 +102,7 @@ export function Booking() {
                     Họ và tên *
                   </label>
                   <input
+                    ref={nameInputRef}
                     type="text"
                     name="name"
                     value={formData.name}
@@ -182,23 +184,7 @@ export function Booking() {
 
           {/* Gift Section */}
           <div className="space-y-8">
-            {/* Gift Image */}
-            <div className="relative">
-              <div className="relative h-auto w-auto rounded-none sm:rounded-2xl overflow-hidden shadow-2xl">
-                <Image
-                  src="/Đăng ký nhận quà.png"
-                  alt="Đăng ký nhận quà"
-                  width={200}
-                  height={100}
-                  className="object-containt w-[400] h-auto animate-pulse hover:animate-none transition-transform duration-1000 hover:scale-105"
-                />
-              </div>
-
-              {/* Floating gift icon with auto animation */}
-              <div className="absolute -top-2 -right-2 bg-gradient-to-r from-pink-500 to-purple-600 rounded-full p-2 shadow-lg animate-bounce">
-                <Gift className="w-4 h-4 text-white" />
-              </div>
-            </div>
+            
 
             {/* Contact Info */}
             <div className="bg-white rounded-2xl p-6 shadow-lg">
@@ -247,6 +233,34 @@ export function Booking() {
                   <span>Đăng ký thẻ thành viên Foxie để nhận nhiều quà tặng, ưu đãi hấp dẫn</span>
                 </li>
               </ul>
+            </div>
+
+            {/* Gift Image */}
+            <div 
+              className="relative cursor-pointer"
+              onClick={() => {
+                nameInputRef.current?.focus();
+                // Smooth scroll to form if needed
+                const formElement = document.getElementById("booking");
+                if (formElement) {
+                  formElement.scrollIntoView({ behavior: "smooth", block: "start" });
+                }
+              }}
+            >
+              <div className="relative h-auto w-auto rounded-none sm:rounded-2xl overflow-hidden shadow-2xl">
+                <Image
+                  src="/Đăng ký nhận quà.png"
+                  alt="Đăng ký nhận quà"
+                  width={200}
+                  height={100}
+                  className="object-containt w-[400] h-auto animate-pulse hover:animate-none transition-transform duration-1000 hover:scale-105"
+                />
+              </div>
+
+              {/* Floating gift icon with auto animation */}
+              <div className="absolute -top-2 -right-2 bg-gradient-to-r from-pink-500 to-purple-600 rounded-full p-2 shadow-lg animate-bounce">
+                <Gift className="w-4 h-4 text-white" />
+              </div>
             </div>
           </div>
         </div>
