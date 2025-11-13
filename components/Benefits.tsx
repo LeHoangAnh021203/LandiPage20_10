@@ -28,22 +28,22 @@ const process = [
   {
     step: '01',
     title: 'Tư vấn miễn phí',
-    description: 'Bác sĩ chuyên khoa tư vấn và đánh giá tình trạng da',
+    description: 'Trải nghiệm máy soi da AI, kèm theo tư vấn và đánh giá tình trạng da',
   },
   {
     step: '02',
     title: 'Làm sạch da',
-    description: 'Làm sạch và chuẩn bị da trước khi điều trị',
+    description: 'Làm sạch và chuẩn bị da trước khi trải nghiệm',
   },
   {
     step: '03',
-    title: 'Điều trị Meso',
-    description: 'Thực hiện điều trị với công nghệ Meso tiên tiến',
+    title: 'Thực hiện Meso',
+    description: 'Thực hiện với công nghệ Meso tiên tiến',
   },
   {
     step: '04',
-    title: 'Chăm sóc sau điều trị',
-    description: 'Hướng dẫn chăm sóc da và theo dõi kết quả',
+    title: 'Chăm sóc sau trải nghiệm',
+    description: 'Đắp mặt nạ -> Bôi kem dưỡng -> Bôi kem chống nắng',
   },
 ]
 
@@ -94,7 +94,7 @@ export function Benefits() {
 
             <div className="text-left">
               <h3 className="text-xl font-bold text-gray-900 mb-4">
-                Quy trình điều trị
+                Các bước trải nghiệm
               </h3>
               <div className="space-y-4">
                 {process.map((item, index) => (
@@ -151,7 +151,7 @@ export function Benefits() {
           <div className="grid grid-cols-2 gap-12 items-center">
             <div>
               <h3 className="text-3xl font-bold text-gray-900 mb-6">
-                Quy trình điều trị
+               Các bước trải nghiệm
               </h3>
               <div className="space-y-6">
                 {process.map((item, index) => (

@@ -41,7 +41,7 @@ export function Hero() {
                 <span>Đặt lịch ngay</span>
                 <ArrowRight className="w-5 h-5" />
               </a>
-              <a href="https://hethong.facewashfox.com/" target="_blank" rel="noopener noreferrer" className="border border-pink-300 text-pink-700 px-6 py-3 rounded-lg hover:bg-pink-50 transition-colors flex items-center justify-center space-x-2 w-full">
+              <a href="https://cuahang.facewashfox.com/" target="_blank" rel="noopener noreferrer" className="border border-pink-300 text-pink-700 px-6 py-3 rounded-lg hover:bg-pink-50 transition-colors flex items-center justify-center space-x-2 w-full">
                 <MapPin className="w-5 h-5" />
                 <span>Xem Chi Nhánh</span>
               </a>
@@ -89,7 +89,7 @@ export function Hero() {
                   <span>Đặt lịch ngay</span>
                   <ArrowRight className="w-5 h-5" />
                 </a>
-                <a href="https://hethong.facewashfox.com/" target="_blank" rel="noopener noreferrer" className="border border-pink-300 text-pink-700 px-8 py-3 rounded-lg hover:bg-pink-50 transition-colors flex items-center space-x-2">
+                <a href="https://cuahang.facewashfox.com/" target="_blank" rel="noopener noreferrer" className="border border-pink-300 text-pink-700 px-8 py-3 rounded-lg hover:bg-pink-50 transition-colors flex items-center space-x-2">
                   <MapPin className="w-5 h-5" />
                   <span>Xem Chi Nhánh</span>
                 </a>

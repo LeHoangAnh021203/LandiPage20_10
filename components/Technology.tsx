@@ -10,7 +10,7 @@ const features = [
   {
     icon: Zap,
     title: 'Hiệu quả nhanh',
-    description: 'Kết quả rõ rệt ngay sau lần đầu điều trị, da căng mịn hơn.',
+    description: 'Kết quả rõ rệt ngay sau lần đầu trải nghiệm, da căng mịn hơn.',
   },
   {
     icon: Heart,
@@ -20,7 +20,7 @@ const features = [
   {
     icon: Star,
     title: 'Chuyên nghiệp',
-    description: 'Đội ngũ bác sĩ giàu kinh nghiệm, trang thiết bị hiện đại.',
+    description: 'Đội ngũ kỹ thuật viên giàu kinh nghiệm, trang thiết bị hiện đại.',
   },
 ]
 
